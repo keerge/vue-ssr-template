@@ -15,6 +15,7 @@ export default {
   preFetch({ store }) {
     return store.dispatch(`getContent`)
   },
+  title: '主页',
   data() {
     return {
 

@@ -29,7 +29,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': env,
-      'process.env.VUE_ENV': 'server'
+      'process.env.VUE_ENV': '"server"'
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
